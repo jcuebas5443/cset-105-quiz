@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css
+    ">
+</head>
+<body>
+    <div class="timer">
+        <button onclick="myTimerFunction()">start</button>
+    </div>
+<div class="quizContainer">
+    <h2>Quiz Game</h2>
+    
+        <!-- QUESTION PAGE -->
+    <div class="Questionpage" id="question-page">
+
+        <h4 class="question" id="Question">Question 1</h4>
+    </div>
+    <div class="answers" id="options">
+        <!-- Answers -->
+        <div>
+        <input type="radio" id="answer1" name="Answer">
+        <label for="answer1">Answer 1</label>
+        </div>
+
+        <div>
+        <input type="radio" id="answer2" name="Answer">
+        <label for="answer2">Answer 2</label>
+        </div>
+
+        <div>
+        <input type="radio" id="answer3" name="Answer">
+        <label for="answer3">Answer 3</label>
+        </div>
+
+        <div>
+        <input type="radio" id="answer4" name="Answer">
+        <label for="answer4">Answer 4</label>
+        </div>
+    </div>
+    <!-- QUESTION PAGE NUMBER -->
+     <div class="QuestionPageNum">
+        <p id="page-number"></p>
+    </div>
+    <button class="btn" id="Submit-btn" onclick="submitAnswer()">Submit</button>
+    
+</div>
+
+
+ <div class="quizContainer-result">
+    <h1></h1>
+    <div class="result" id="Result">
+        <h3 id = "resultText"></h3>
+    </div>
+    <button class="btn" id="RestartBtn" onclick="restartQuiz()">Restart</button>
+ </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

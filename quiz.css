@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(1, 35, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quizContainer {
+    background-color: white;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+    padding: 25px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 5px 5px rgb(0, 0, 7);
+
+}
+
+h2{
+    color: black;
+    margin-bottom: 20px;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color:black ;
+}
+
+.question {
+    color: #333;
+    font-size: large;
+    margin-bottom: 25px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.answers div {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    text-align: left;
+
+}
+
+.answers div:hover {
+    background-color: whitesmoke;
+    border-color: grey;
+}
+
+
+.QuestionPageNum {
+    margin-bottom: 15px;
+    color: grey;
+    font-size: 0.95em;
+    font-weight: 500;
+    
+}
+ .answers label {
+    flex-grow: 1;
+    margin-left: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.btn {
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: large;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+
+}
+
+.btn:hover{
+    background-color: rgb(114, 183, 227);
+    
+}
+
+.quizContainer-result{
+    display: none;
+    background-color: white;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+    padding: 25px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    color: greenyellow;
+
+}
+
+.timer{
+   border: 1px solid darkgray;
+   height: 100px;
+   width: 100px;
+    margin:10px;
+    background-color: aliceblue;
+}
