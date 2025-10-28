@@ -114,12 +114,6 @@ function restartQuiz() {
     showQuestion();
 }
 
-let time = 0 
-var myTimer= setInterval(myTimerFunction,1000)
-function myTimerFunction(){
-    time++
-    document.getElementById("timer").innerText = time
-}
 
 showQuestion();
 
